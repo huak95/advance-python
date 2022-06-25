@@ -12,6 +12,7 @@ def immutable_demo():
 def mutable_demo():
     #  สมบัติ
     #  เมื่อโดน a = b แล้วไปแก้ b ตัว a ก็จะเปลี่ยนด้วย
+    
     n = [4]
     print("id(n) = {}, n={}".format(id(n), n))
     n[0] = n[0] + 1

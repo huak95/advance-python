@@ -10,9 +10,9 @@ class Medal:
     
     # Setected __repr__ over __str__
     
-    def __str__(self): # to Stings()
-        return "{:15} g: {} s: {} b: {} t: {}"\
-            .format(self.country, self.gold, self.silver, self.bronze, self.total())
+    # def __str__(self): # to Stings()
+    #     return "{:15} g: {} s: {} b: {} t: {}"\
+    #         .format(self.country, self.gold, self.silver, self.bronze, self.total())
             
     def __repr__(self): # string representation
         return "{}{}".format(self.__class__.__name__, repr((self.country, self.gold, self.silver, self.bronze)))
