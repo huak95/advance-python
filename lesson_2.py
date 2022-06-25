@@ -7,6 +7,9 @@ class Player:
 
     # add string method to print
     def __str__(self):
+        return "fname: {}\nlname: {}".format(self.fname, self.lname)
+    
+    def total(self):
         return "fname: {}\nlname: {}\ncountry: {}".format(self.fname, self.lname, self.country)
 
 if __name__ == '__main__':
@@ -14,3 +17,4 @@ if __name__ == '__main__':
     print(p1.fname)
     print(p1.country)
     print(p1)
+    print(p1.total())
